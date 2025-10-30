@@ -1,4 +1,137 @@
-<h>Hello World this is sidhu</h>
-<p>Welcome to my website!</p>
-<p>Feel free to explore and learn more about me.</p>
-<p>Contact me at</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Automation Tester Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Montserrat', Arial, sans-serif;
+			background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+			margin: 0;
+			color: #222;
+		}
+		.container {
+			max-width: 900px;
+			margin: 40px auto;
+			background: #fff;
+			border-radius: 18px;
+			box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+			padding: 40px 32px;
+		}
+		header {
+			text-align: center;
+			margin-bottom: 32px;
+		}
+		header h1 {
+			font-size: 2.8rem;
+			font-weight: 700;
+			margin-bottom: 8px;
+			color: #2d5cfe;
+		}
+		header p {
+			font-size: 1.2rem;
+			color: #555;
+		}
+		.skills {
+			display: flex;
+			justify-content: center;
+			gap: 24px;
+			margin: 32px 0;
+			flex-wrap: wrap;
+		}
+		.skill {
+			background: #f3f7ff;
+			border-radius: 12px;
+			padding: 18px 28px;
+			font-size: 1.1rem;
+			font-weight: 600;
+			color: #2d5cfe;
+			box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+			transition: transform 0.2s;
+		}
+		.skill:hover {
+			transform: scale(1.07);
+			background: #e0eafc;
+		}
+		.section-title {
+			font-size: 1.6rem;
+			font-weight: 700;
+			color: #2d5cfe;
+			margin-bottom: 18px;
+		}
+		.projects {
+			margin-bottom: 32px;
+		}
+		.project {
+			background: #f8fafc;
+			border-radius: 10px;
+			padding: 18px 22px;
+			margin-bottom: 16px;
+			box-shadow: 0 1px 4px rgba(44, 62, 80, 0.06);
+		}
+		.project-title {
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: #222;
+		}
+		.project-desc {
+			color: #555;
+			margin-top: 6px;
+		}
+		.contact {
+			text-align: center;
+			margin-top: 32px;
+		}
+		.contact a {
+			color: #2d5cfe;
+			text-decoration: none;
+			font-weight: 600;
+			border-bottom: 2px solid #2d5cfe33;
+			transition: border-color 0.2s;
+		}
+		.contact a:hover {
+			border-color: #2d5cfe;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Jane Doe</h1>
+			<p>Automation Tester | Passionate about Quality Engineering & Test Automation</p>
+		</header>
+
+		<div class="section-title">Skills</div>
+		<div class="skills">
+			<div class="skill">Selenium</div>
+			<div class="skill">Playwright</div>
+			<div class="skill">C#</div>
+			<div class="skill">Java</div>
+			<div class="skill">ReqnRoll</div>
+		</div>
+
+		<div class="section-title">Projects</div>
+		<div class="projects">
+			<div class="project">
+				<div class="project-title">E2E Test Automation for E-Commerce</div>
+				<div class="project-desc">Developed robust Selenium and Playwright test suites for a large e-commerce platform, automating regression and smoke tests in C# and Java.</div>
+			</div>
+			<div class="project">
+				<div class="project-title">Continuous Integration with ReqnRoll</div>
+				<div class="project-desc">Integrated ReqnRoll for requirements-based testing, improving traceability and coverage in CI/CD pipelines.</div>
+			</div>
+			<div class="project">
+				<div class="project-title">Cross-Browser Automation Framework</div>
+				<div class="project-desc">Built a scalable framework using Playwright and Selenium to support automated testing across Chrome, Firefox, and Edge.</div>
+			</div>
+		</div>
+
+		<div class="section-title">Contact</div>
+		<div class="contact">
+			<p>Let's connect! <a href="mailto:jane.doe@email.com">jane.doe@email.com</a></p>
+		</div>
+	</div>
+</body>
+</html>
