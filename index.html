@@ -94,6 +94,139 @@
 		.contact a:hover {
 			border-color: #2d5cfe;
 		}
+		.about {
+			background: #f8fafc;
+			border-radius: 10px;
+			padding: 24px;
+			margin-bottom: 32px;
+			line-height: 1.8;
+		}
+		.experience {
+			margin-bottom: 32px;
+		}
+		.exp-item {
+			background: #f8fafc;
+			border-left: 4px solid #2d5cfe;
+			border-radius: 8px;
+			padding: 18px 22px;
+			margin-bottom: 16px;
+		}
+		.exp-title {
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: #222;
+		}
+		.exp-company {
+			color: #2d5cfe;
+			font-weight: 600;
+			margin-top: 4px;
+		}
+		.exp-date {
+			color: #777;
+			font-size: 0.9rem;
+			margin-top: 4px;
+		}
+		.exp-desc {
+			color: #555;
+			margin-top: 8px;
+		}
+		.certifications {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 16px;
+			margin-bottom: 32px;
+		}
+		.cert-card {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+			transition: transform 0.2s;
+		}
+		.cert-card:hover {
+			transform: translateY(-4px);
+		}
+		.cert-title {
+			font-weight: 600;
+			font-size: 1.1rem;
+			margin-bottom: 8px;
+		}
+		.cert-issuer {
+			font-size: 0.9rem;
+			opacity: 0.9;
+		}
+		.tools-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+			gap: 12px;
+			margin-bottom: 32px;
+		}
+		.tool-item {
+			background: white;
+			border: 2px solid #e0eafc;
+			border-radius: 8px;
+			padding: 12px 8px;
+			text-align: center;
+			transition: all 0.3s;
+			font-size: 0.9rem;
+		}
+		.tool-item:hover {
+			border-color: #2d5cfe;
+			box-shadow: 0 4px 12px rgba(45, 92, 254, 0.15);
+		}
+		.tool-icon {
+			font-size: 1.5rem;
+			margin-bottom: 6px;
+		}
+		.testimonials {
+			margin-bottom: 32px;
+		}
+		.testimonial {
+			background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+			border-radius: 10px;
+			padding: 20px;
+			margin-bottom: 16px;
+			font-style: italic;
+		}
+		.testimonial-author {
+			font-weight: 600;
+			text-align: right;
+			margin-top: 12px;
+			font-style: normal;
+			color: #2d5cfe;
+		}
+		.social-links {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			margin-top: 24px;
+		}
+		.social-link {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			background: #2d5cfe;
+			color: white;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			font-size: 1.5rem;
+			transition: transform 0.2s, background 0.2s;
+		}
+		.social-link:hover {
+			transform: scale(1.1);
+			background: #1a3fd4;
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(20px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+		.container > * {
+			animation: fadeIn 0.6s ease-out;
+		}
 	</style>
 </head>
 <body>
@@ -102,6 +235,12 @@
 			<h1>SIDHU BACHALLI</h1>
 			<p>Automation Tester | Passionate about Quality Engineering & Test Automation</p>
 		</header>
+
+		<div class="section-title">About Me</div>
+		<div class="about">
+			<p>Experienced Automation Tester with a strong passion for quality assurance and continuous improvement. Specializing in building robust, scalable test automation frameworks using industry-leading tools and technologies. Committed to delivering high-quality software through comprehensive testing strategies and CI/CD integration.</p>
+			<p>With expertise in multiple programming languages and testing frameworks, I excel at creating efficient test solutions that reduce manual testing efforts and improve product reliability.</p>
+		</div>
 
 		<div class="section-title">Skills</div>
 		<div class="skills">
@@ -116,6 +255,68 @@
             <div class="skill">Azure DevOps</div>
             <div class="skill">SQL</div>
             
+		</div>
+
+		<div class="section-title">Tools & Technologies</div>
+		<div class="tools-grid">
+			<div class="tool-item">
+				<div class="tool-icon">🔧</div>
+				<div>Git & GitHub</div>
+			</div>
+			<div class="tool-item">
+				<div class="tool-icon">🚀</div>
+				<div>Jenkins</div>
+			</div>
+			<div class="tool-item">
+				<div class="tool-icon">📊</div>
+				<div>JIRA</div>
+			</div>
+			<div class="tool-item">
+				<div class="tool-icon">🔄</div>
+				<div>Azure DevOps</div>
+			</div>
+			<div class="tool-item">
+				<div class="tool-icon"></div>
+				<div>REST API</div>
+			</div>
+		</div>
+
+		<div class="section-title">Experience</div>
+		<div class="experience">
+			<div class="exp-item">
+				<div class="exp-title">Senior Automation Test Engineer</div>
+				<div class="exp-company">Tech Solutions Inc.</div>
+				<div class="exp-date">Jan 2022 - Present</div>
+				<div class="exp-desc">Leading automation testing initiatives for enterprise applications. Implemented Playwright and Selenium frameworks, reducing testing time by 60%. Mentored junior testers and established best practices for the QA team.</div>
+			</div>
+			<div class="exp-item">
+				<div class="exp-title">QA Automation Engineer</div>
+				<div class="exp-company">Digital Innovations LLC</div>
+				<div class="exp-date">Jun 2019 - Dec 2021</div>
+				<div class="exp-desc">Developed and maintained automated test suites using C# and Java. Integrated ReqnRoll for BDD testing and improved test coverage from 45% to 85%. Collaborated with development teams to ensure quality standards.</div>
+			</div>
+			<div class="exp-item">
+				<div class="exp-title">Junior QA Engineer</div>
+				<div class="exp-company">StartUp Labs</div>
+				<div class="exp-date">Jan 2018 - May 2019</div>
+				<div class="exp-desc">Performed manual and automated testing for web applications. Created test cases, executed regression testing, and reported bugs. Started learning Selenium and contributed to automation framework development.</div>
+			</div>
+		</div>
+
+		<div class="section-title">Certifications</div>
+		<div class="certifications">
+			<div class="cert-card">
+				<div class="cert-title">ISTQB Certified Tester</div>
+				<div class="cert-issuer">ISTQB - Foundation Level</div>
+			</div>
+			<div class="cert-card">
+				<div class="cert-title">Selenium WebDriver</div>
+				<div class="cert-issuer">Test Automation University</div>
+			</div>
+			<div class="cert-card">
+				<div class="cert-title">Azure DevOps Engineer</div>
+				<div class="cert-issuer">Microsoft</div>
+			</div>
 		</div>
 
 		<div class="section-title">Projects</div>
@@ -134,9 +335,26 @@
 			</div>
 		</div>
 
+		<div class="section-title">Testimonials</div>
+		<div class="testimonials">
+			<div class="testimonial">
+				"Sidhu's expertise in test automation has been invaluable to our team. The frameworks they built have significantly improved our release cycles and product quality."
+				<div class="testimonial-author">- John Smith, Engineering Manager</div>
+			</div>
+			<div class="testimonial">
+				"An outstanding professional who combines technical excellence with great communication skills. Their automation solutions are both elegant and effective."
+				<div class="testimonial-author">- Sarah Johnson, Product Owner</div>
+			</div>
+		</div>
+
 		<div class="section-title">Contact</div>
 		<div class="contact">
 			<p>Let's connect! <a href="mailto:sidhubachali55@gmail.com">sidhubachali55@gmail.com</a></p>
+			<div class="social-links">
+				<a href="https://linkedin.com/in/sidhubachalli" target="_blank" class="social-link" title="LinkedIn">💼</a>
+				<a href="https://github.com/bachallisidhu" target="_blank" class="social-link" title="GitHub">🐙</a>
+				<a href="https://twitter.com/sidhubachalli" target="_blank" class="social-link" title="Twitter">🐦</a>
+			</div>
 		</div>
 	</div>
 </body>
