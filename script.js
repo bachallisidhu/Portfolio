@@ -70,16 +70,15 @@ window.addEventListener('scroll', () => {
 });
 
 // Typing Animation
-const typingText = document.querySelector('.typing-text');
-const text = typingText.textContent;
-typingText.textContent = '';
-let i = 0;
+const typingElement = document.getElementById('typing-text');
+const textToType = 'Automation Tester';
+let charIndex = 0;
 
 function typeWriter() {
-	if (i < text.length) {
-		typingText.textContent += text.charAt(i);
-		i++;
-		setTimeout(typeWriter, 50);
+	if (charIndex < textToType.length) {
+		typingElement.textContent += textToType.charAt(charIndex);
+		charIndex++;
+		setTimeout(typeWriter, 100); // 100ms delay between characters
 	}
 }
 
