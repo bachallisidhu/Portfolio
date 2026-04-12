@@ -1,19 +1,20 @@
 // Dynamic Experience Years Calculation
 function setExperienceYears() {
-	const expSpan = document.getElementById('exp-years');
+	var expSpan = document.getElementById('exp-years');
 	if (!expSpan) return;
-	const start = new Date(2022, 8, 1); // Sep is month 8 (0-based)
-	const now = new Date();
-	let years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
+	// Use Sep 1, 2022 as the start date
+	var start = new Date(2022, 8, 1); // Sep is month 8 (0-based)
+	var now = new Date();
+	var years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
 	years = years < 10 ? years.toFixed(1) : Math.round(years);
 	expSpan.textContent = years;
 }
 
-// Ensure DOM is loaded before running
-if (document.readyState === 'loading') {
-	document.addEventListener('DOMContentLoaded', setExperienceYears);
-} else {
+// Run after DOM is ready (for production reliability)
+if (window.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
 	setExperienceYears();
+} else {
+	document.addEventListener('DOMContentLoaded', setExperienceYears);
 }
 // Navigation Bar Functionality
 const hamburger = document.querySelector('.hamburger');
