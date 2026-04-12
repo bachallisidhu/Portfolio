@@ -5,7 +5,8 @@ function setExperienceYears() {
 	// Use Sep 1, 2022 as the start date
 	var start = new Date(2022, 8, 1); // Sep is month 8 (0-based)
 	var now = new Date();
-	var years = (now - start) / (1000 * 60 * 60 * 24 * 365.25);
+	// Subtract 4 months (approx 1/3 year)
+	var years = (now - start) / (1000 * 60 * 60 * 24 * 365.25) - (4 / 12);
 	years = years < 10 ? years.toFixed(1) : Math.round(years);
 	expSpan.textContent = years;
 }
