@@ -279,8 +279,8 @@ header p {
 .skill {
 	background: transparent;
 	border-radius: 12px;
-	padding: 18px 28px;
-	font-size: 1.1rem;
+	padding: 8px 16px;
+	font-size: 0.85rem;
 	font-weight: 600;
 	color: #2c3e50;
 	box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
